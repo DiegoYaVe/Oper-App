@@ -1,0 +1,34 @@
+
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <br>
+    <br>
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="assets/img/operapp.jpeg" id="icon" alt="User Icon" />
+    </div>
+    <br>
+
+    <!-- Login Form -->
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)"> 
+      <input type="text" id="login" class="fadeIn second"  placeholder="Correo" formControlName="correo">
+      <input type="password" id="password" class="fadeIn third"  placeholder="Contraseña" formControlName="passuser">
+      <input type="submit" class="fadeIn fourth" value="Iniciar Sesión">
+    </form>
+
+      <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">¿Olvidaste tu contraseña?</a>
+      <br>
+      <br>
+      <a>¿No tienes cuenta? <a class="underlineHover" href="registro">Registrate</a></a>
+    </div>
+    
+    <div class="alert alert-danger" *ngIf="errorStatus">
+       <p>{{ errorMsj }}</p>
+    </div>
+  
+  </div>
+</div>

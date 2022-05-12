@@ -1,0 +1,163 @@
+<!--
+<div class="container">
+    <div class="Back">
+         <i class="fa fa-arrow-left" onclick="Back()"></i>
+     </div>
+     <p class="h2 text-center">Registro</p>
+     <form action="" method="post">
+         <div class="preview text-center">
+             <img class="preview-img" src="http://simpleicon.com/wp-content/uploads/account.png" alt="Preview Image" width="200" height="200"/>
+             <div class="browse-button">
+                 <i class="fa fa-pencil-alt"></i>
+                 <input class="browse-input" type="file" required name="UploadedFile" id="UploadedFile"/>
+             </div>
+             <span class="Error"></span>
+         </div>
+         <div class="form-group">
+             <label>Nombre:</label>
+             <input class="form-control" type="text" name="fullname" required placeholder="Ingresa tu nombre"/>
+             <span class="Error"></span>
+         </div>
+         <div class="form-group">
+            <label>Apellido paterno:</label>
+            <input class="form-control" type="text" name="fullname" required placeholder="Ingresa tu apellido paterno"/>
+            <span class="Error"></span>
+        </div>
+        <div class="form-group">
+            <label>Apellido pmaterno:</label>
+            <input class="form-control" type="text" name="fullname" required placeholder="Ingresa tu apellido materno"/>
+            <span class="Error"></span>
+        </div>
+         <div class="form-group">
+             <label>Correo electrónico:</label>
+             <input class="form-control" type="email" name="email" required placeholder="Ingresa tu correo electrónico"/>
+             <span class="Error"></span>
+         </div>
+         <div class="form-group">
+             <label>Contraseña:</label>
+             <input class="form-control" type="password" name="password" required placeholder="Ingresa una contraseña"/>
+             <span class="Error"></span>
+         </div>
+         <div class="form-group">
+             <label>Experiencia (en años):</label>
+             <input class="form-control" type="password" name="password" required placeholder="Ingresa tus años de experiencia"/>
+             <span class="Error"></span>
+         </div>
+         <div class="form-group">
+            <label>Edad:</label>
+            <input class="form-control" type="password" name="password" required placeholder="Ingresa tu edad"/>
+            <span class="Error"></span>
+        </div>
+        <div class="form-group">
+            <label>Ubicación:</label>
+            <input class="form-control" type="password" name="password" required placeholder="Ingresa tu ciudad de residencia"/>
+            <span class="Error"></span>
+        </div>
+         <div class="form-group">
+             <label>Genero:</label><br/>
+             <label><input type="radio" name="gender" required value="Male" checked /> Hombre </label>
+             
+             <label><input type="radio" name="gender" required value="Female" /> Mujer </label>
+             <label><input type="radio" name="gender" required value="Other" /> Otro </label>
+             <span class="Error"></span>
+         </div>
+         <div class="form-group">
+             <input class="btn btn-primary btn-block" type="submit" value="Submit"/>
+         </div>
+    </form>
+ </div>
+-->
+<div id="columna1">
+    <br><br><br><br><br><br>
+    <div class="preview text-center">
+        <img class="preview-img" src="http://simpleicon.com/wp-content/uploads/account.png" alt="Preview Image" width="200" height="200"/>
+        <div class="browse-button">
+            <i class="fa fa-pencil-alt"></i>
+            <input class="browse-input" type="file" required name="UploadedFile" id="UploadedFile"/>
+        </div>
+        <span class="Error"></span>
+</div>
+
+<div id="columna2">
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+            <form role="form">
+                    <h3><small>¿Te interesa encontrar un empleo?. ¡Registrate!</small></h3>
+                <hr class="colorgraph">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="first_name" id="apellidop" class="form-control input-lg" placeholder="Apellido paterno" tabindex="1">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="last_name" id="apellidom" class="form-control input-lg" placeholder="Apellido materno" tabindex="2">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="nombre" id="display_name" class="form-control input-lg" placeholder="Nombre(s)" tabindex="3">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Correo electrónico" tabindex="4">
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Contraseña" tabindex="5">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirma contraseña" tabindex="6">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3 col-md-3">
+                        <span class="button-checkbox">
+                            <button type="button" class="btn" data-color="info" tabindex="7"></button>
+                            <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
+                        </span>
+                    </div>
+                    <div class="col-xs-8 col-sm-9 col-md-9">
+                        Al hacer clic en <strong class="label label-primary">Registrarse</strong>, acepta los <a href="#" data-toggle="modal" data-target="#t_and_c_m">Términos y condiciones </a> establecidos por este sitio, incluido nuestro uso de cookies.
+                    </div>
+                </div>
+                
+                <hr class="colorgraph">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6"><input type="submit" value="  Registrarse  " class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+                    <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">  Iniciar sesión  </a></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    </div>
+    </div>

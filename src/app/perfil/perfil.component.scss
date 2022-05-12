@@ -1,0 +1,29 @@
+html, body{
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .contenedor{
+    //height: 49%;
+    background-color: #d6d6d6;
+    margin: 0.2%;
+    align-items: center;
+    display: flex;
+    
+  }
+
+.alinear-centro{
+    text-align: center;
+    }
+
+     .outer { 
+      position: relative;
+      width: 100%;
+      padding-bottom: 25%;
+    }
+    .inner {
+      position:absolute;
+      width:101%;
+      height: 35%;
+      background-color: #164979; 
+    }
